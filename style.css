@@ -1,0 +1,131 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Estilos del header */
+header {
+    background-color: #ff7700;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header .logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc99;
+}
+
+/* Estilos de los títulos */
+h1 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 28px;
+    color: #ff7700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Diseño general de la página */
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Estilos de los formularios */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    outline: none;
+    border-color: #ff7700;
+}
+
+input[type="submit"] {
+    background-color: #ff7700;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 100%;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff5500;
+    box-shadow: 0 4px 12px rgba(255, 85, 0, 0.2);
+}
+
+/* Contenedor centrado */
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
